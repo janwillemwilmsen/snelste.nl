@@ -1,0 +1,20 @@
+/* purgecss start ignore */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+/* purgecss end ignore */
+@import 'tailwindcss/utilities';
+
+
+.myheading {
+    font-family: Varela Round;
+    /* @apply text-lg text-center text-black font-semibold; */
+    @apply  text-center  font-bold;
+}
+
+.item {
+	@apply
+		 text-gray-100
+		text-xl font-bold
+		flex items-center content-center justify-center
+		rounded
+}

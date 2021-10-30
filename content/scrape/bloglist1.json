@@ -1,0 +1,102 @@
+[
+    {
+        "title": "Lighthouse scores do not affect Google Search / SEO",
+        "slug": "https://www.erwinhofman.com/blog/lighthouse-scores-do-not-affect-google-search-seo/",
+        "time": "august 27, 2021"
+    },
+    {
+        "title": "Anyone else not buying Core Web Vitals?",
+        "slug": "https://www.erwinhofman.com/blog/anyone-else-not-buying-core-web-vitals/",
+        "time": "august 9, 2021"
+    },
+    {
+        "title": "To lazyload or not to lazyload above the fold images",
+        "slug": "https://www.erwinhofman.com/blog/to-lazyload-above-the-fold-images/",
+        "time": "july 16, 2021"
+    },
+    {
+        "title": "Spot issues in your copied preconnect code snippet [how to]",
+        "slug": "https://www.erwinhofman.com/blog/spot-issues-in-preconnect-code-snippet-how-to/",
+        "time": "july 8, 2021"
+    },
+    {
+        "title": "Shopware 6 as your ideal Core Web Vitals boilerplate?",
+        "slug": "https://www.erwinhofman.com/blog/shopware-as-your-ideal-core-web-vitals-boilerplate/",
+        "time": "may 25, 2021"
+    },
+    {
+        "title": "Google IO and Core Web Vitals ranking announcements",
+        "slug": "https://www.erwinhofman.com/blog/google-io-core-web-vitals-ranking-announcements/",
+        "time": "may 21, 2021"
+    },
+    {
+        "title": "Google announces: Core Web Vitals delayed and more insights",
+        "slug": "https://www.erwinhofman.com/blog/google-announces-core-web-vitals-delayed-and-more-insights/",
+        "time": "april 20, 2021"
+    },
+    {
+        "title": "Google announces CLS metric will change, and here's how",
+        "slug": "https://www.erwinhofman.com/blog/google-announces-cls-metric-will-change-how/",
+        "time": "april 10, 2021"
+    },
+    {
+        "title": "Let's get critical: inline CSS a must have?",
+        "slug": "https://www.erwinhofman.com/blog/lets-get-critical-inline-css-must-have/",
+        "time": "april 5, 2021"
+    },
+    {
+        "title": "Hack your PageSpeed LCP metric by enlarging your hero image",
+        "slug": "https://www.erwinhofman.com/blog/hack-pagespeed-lcp-metric-by-enlarging-hero-image/",
+        "time": "march 31, 2021"
+    },
+    {
+        "title": "Website performance and laggy animations: GPU vs CPU",
+        "slug": "https://www.erwinhofman.com/blog/website-performance-laggy-animations-gpu-vs-cpu/",
+        "time": "march 15, 2021"
+    },
+    {
+        "title": "Could and should I fake PageSpeed Insights?",
+        "slug": "https://www.erwinhofman.com/blog/could-and-should-i-fake-pagespeed-insights/",
+        "time": "march 5, 2021"
+    },
+    {
+        "title": "Why Lighthouse says image elements lack width and height and how to fix",
+        "slug": "https://www.erwinhofman.com/blog/why-lighthouse-says-image-elements-lack-width-and-height-and-how-to-fix/",
+        "time": "march 1, 2021"
+    },
+    {
+        "title": "A Lifehack for removing unused JS/CSS.. or just unminify",
+        "slug": "https://www.erwinhofman.com/blog/a-lifehack-for-removing-unused-js-css-or-just-minifying/",
+        "time": "february 23, 2021"
+    },
+    {
+        "title": "Need for pagespeed depends on the context",
+        "slug": "https://www.erwinhofman.com/blog/need-for-pagespeed-depends-on-context/",
+        "time": "february 18, 2021"
+    },
+    {
+        "title": "Improving Pagespeed / UX by ditching PWA",
+        "slug": "https://www.erwinhofman.com/blog/how-ditching-pwa-helped-improving-pagespeed-and-ux/",
+        "time": "february 16, 2021"
+    },
+    {
+        "title": "Web performance company without passing Core Web Vitals",
+        "slug": "https://www.erwinhofman.com/blog/web-performance-company-without-core-web-vitals/",
+        "time": "february 9, 2021"
+    },
+    {
+        "title": "Accessible currency converter, including dropdown and API usage",
+        "slug": "https://www.erwinhofman.com/blog/accessible-currency-converter-including-dropdown-and-api/",
+        "time": "february 3, 2021"
+    },
+    {
+        "title": "Google's fast AMP framework and Core Web Vitals, pass or fail?",
+        "slug": "https://www.erwinhofman.com/blog/google-fast-amp-framework-and-core-web-vitals/",
+        "time": "january 25, 2021"
+    },
+    {
+        "title": "You can make > $50,000 a month with a single PHP file",
+        "slug": "https://www.erwinhofman.com/blog/you-can-make-gt-50-000-a-month-with-a-single-php-file/",
+        "time": "january 16, 2021"
+    }
+]
