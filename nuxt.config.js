@@ -117,10 +117,10 @@ import getRoutes from "./scripts/getRoutes";
   pwa: {
     icon: {
       /* icon options */
+      fileName: 'icon2.png',
     },
     manifest: {
-      name: 'My Awesome App',
-      lang: 'fa',
+      name: 'Snelste.nl - webperformance',
       useWebmanifestExtension: true,
       theme_color: '#d8479b',
       lang: 'nl',

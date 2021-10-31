@@ -28,7 +28,7 @@
 
     <Nuxt-link to="/dashboard" class="underline">
               <button type="submit" class="px-4 py-2 text-sm font-medium text-gray-700 transition duration-1000 border border-gray-300 rounded-md focus:outline-none focus:ring hover:text-gray-800 hover:bg-gray-300 active:bg-blue-700 focus:ring-blue-300"> 
-                   meer
+                   Allemaal
                 </button>
     </Nuxt-link>
 <br>

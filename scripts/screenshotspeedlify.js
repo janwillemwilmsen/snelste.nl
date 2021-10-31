@@ -50,7 +50,13 @@ const tool7naam   =  config[6].slug;
       const browser = await playwright[browserType].launch();
       
       const context = await browser.newContext();
+      
       const page = await context.newPage();
+
+      // DIT WERKT WEL.
+      await page.setViewportSize({width: 920, height: 500});
+
+
       // page.setViewportSize({
       //   width: 1200,
       //   height: 630

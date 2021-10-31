@@ -8,8 +8,9 @@
 
             <div class="max-w-lg ">
                     <nuxt-link to="/" class="home">
-                    <div class="flex flex-row w-32 p-1 mx-auto border-opacity-25 bg-gradient-to-r from-blue-800 to-pink-500 rounded-3xl">
-                        <div><img src="~assets/icons/snelste.png" alt="Snelste" class="w-8 mx-auto invert"> </div>
+                    <div class="flex flex-row w-32 p-1 mx-auto border-opacity-25 bg-gradient-to-r from-blue-700 to-pink-500 rounded-3xl">
+                        <!-- <div><img src="~assets/icons/snelste.png" alt="Snelste" class="w-8 h-8 mx-auto "> </div> -->
+                        <div><img src="~assets/icons/snelste.svg" alt="Snelste" class="w-8 h-8 mx-auto "> </div>
                         <div class="px-2 text-2xl font-light text-blue-900 myheading">snelste</div>
                     </div>
                     </nuxt-link> 
