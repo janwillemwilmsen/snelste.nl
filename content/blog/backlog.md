@@ -10,11 +10,11 @@ volgorde: 100
 
 # To do's:
 
-- push naar github
-- connect domein
-- design
-- content vullen
+- push naar github - DONE
+- connect domein - DONE
+- design - half
+- content vullen - 
 - video maken
-- serviceworker
+- serviceworker - DONE
 - tagmanager + webstats
 

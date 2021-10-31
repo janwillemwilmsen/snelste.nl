@@ -11,6 +11,9 @@ export default async () => {
     const zorks = await $content('dashboard')
       .only(['path'])
       .fetch()
+    const plorks = await $content('blog')
+      .only(['path'])
+      .fetch()
     
   
     // Map and concatenate the routes and return the array.
@@ -18,6 +21,7 @@ export default async () => {
       .concat(...works.map((w) => w.path))
       .concat(...posts.map((p) => p.path))
       .concat(...zorks.map((z) => z.path))
+      .concat(...plorks.map((a) => a.path))
   }
 
 // ==============

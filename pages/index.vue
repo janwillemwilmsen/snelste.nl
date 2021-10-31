@@ -65,6 +65,7 @@ export default {
 
    head() {
     return {
+      title: this.$config.homepageSeoTitle,
       meta: [
         { hid: 'description', name: 'description', content: this.$config.homepageMetaDescription },
         // Open Graph
