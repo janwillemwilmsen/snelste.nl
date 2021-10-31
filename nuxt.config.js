@@ -51,7 +51,7 @@ import getRoutes from "./scripts/getRoutes";
       
       { hid:      "og:title",         property: "og:title",             content: "My Amazing Blog on The Joy of Painting", },
       { hid:      "og:description",   property: "og:description",       content: "Articles focused on the beautiful art of landscape painting." },
-      { hid:      "og:url",           property: "og:url",               content: "https://bobross.com", },
+      { hid:      "og:url",           property: "og:url",               content: "https://snelste.nl", },
       { hid:      "og:image",         property: "og:image",             content: "/a-lovely-image.png" },
       { property: "og:site_name",                                       content: "BobRoss@Config" },
       { hid:      "og:type",          property: "og:type",              content: "website" },
