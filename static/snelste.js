@@ -14,13 +14,13 @@
 // makediv.style.position = "relative";
 // makediv.style.overflow = "hidden";
 
-let li = document.createElement('li');
-li.textContent = 'Products';
-menu.appendChild(li);
+// let li = document.createElement('li');
+// li.textContent = 'Products';
+// menu.appendChild(li);
 
-li = document.createElement('li');
-li.textContent = 'About Us';
+// li = document.createElement('li');
+// li.textContent = 'About Us';
 
-// select the ul menu element
-const menu = document.querySelector('#menu');
-menu.appendChild(li);
+// // select the ul menu element
+// const menu = document.querySelector('#menu');
+// menu.appendChild(li);
