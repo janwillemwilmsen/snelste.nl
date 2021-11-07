@@ -2,13 +2,14 @@
  <section class="text-gray-200 bg-gray-900">
 	<article>
       
-<div class="flex justify-center max-w-4xl py-16 mx-auto ">
+<div class="flex justify-center max-w-6xl py-16 mx-auto ">
             <div>
 
              <!-- <h1 class="font-bold">  {{ blog.title }}</h1>
              <p>   {{ blog.description }}<br> -->
              Door: {{blog.door}}
-         <nuxt-content :document="blog" class="prose-sm prose text-gray-200 md:prose-lg xl:prose-2xl" />
+         <nuxt-content :document="blog" class="text-gray-200 md:prose-lg xl:prose-xl" />
+            <br>
             <br>
             <hr>
 

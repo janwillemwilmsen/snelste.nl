@@ -19,15 +19,19 @@
 
       <div class="flex flex-row justify-center max-w-3xl pt-4 mx-auto text-2xl text-gray-400">
           <div class="m-2"> 
+             <Nuxt-link to="/blog/zelf-maken">
                   <button class="px-4 py-2 text-sm font-medium text-white transition bg-blue-600 border-0 rounded-md focus:outline-none focus:ring hover:bg-blue-700 active:bg-blue-700 focus:ring-blue-300" type="submit">
               Zelf maken   
                   </button>
+             </Nuxt-link>
 
           </div>
           <div class="m-2"> 
+                         <Nuxt-link to="/blog/laten-maken">
                 <button class="px-4 py-2 text-sm font-medium text-blue-700 transition border border-blue-600 rounded-md focus:outline-none focus:ring hover:text-white hover:bg-blue-600 active:bg-blue-700 focus:ring-blue-300" type="submit"> 
                   Laten maken 
                 </button>
+                         </Nuxt-link>
 
            
           </div>

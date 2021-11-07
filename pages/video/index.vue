@@ -16,12 +16,12 @@
             <div class="max-w-xs mb-5 bg-white border border-gray-200 rounded-lg shadow-md ">
 
             <!-- <img class="rounded-t-lg" :src="'/dashboard/' + video.image"/> -->
-
+ <!-- params="controls=0&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1" -->
             <lite-youtube
               :videoid="video.youtubeurl"
               :playlabel="video.videonaam"
                 class="w-80"
-              params="controls=0&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"
+                params="controls=1&modestbranding=2&rel=0&enablejsapi=1"
             />
 
               <Nuxt-Link :to="'/video/' + video.slug" >

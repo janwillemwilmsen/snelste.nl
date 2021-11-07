@@ -37,7 +37,7 @@ client.authorize(function(err,tokens){
 
                 spreadsheetId: '1WmT767jcZiGgbjpYLv20sdFLusjhJmBF6bQDP-GwiUM',
                 majorDimension: 'columns',
-                range: 'video!C5:M13'
+                range: 'video!C5:AB19'
 
             };
 

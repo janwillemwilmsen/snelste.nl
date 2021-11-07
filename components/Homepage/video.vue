@@ -1,14 +1,18 @@
 <template>
-  <div class="py-16 text-center bg-gray-100">
+  <div class="py-16 text-center bg-gray-50">
 
         <h2 class="text-2xl font-bold text-gray-900 myheading">
             Meer weten over website performance?
         </h2>
+        <p class="max-w-xl mx-auto">
+          We hebben een serie videos samgesteld over webperformance. 
+          Van enkele oudere videos over de werking van internet, browsers, servers en websites. Tot meer recente videos over de Web Vitals en hoe je die verbetert.
+        </p>
 
-<div class="flex flex-wrap content-center justify-center w-full pt-8 mx-auto">
+<div class="flex flex-wrap content-center justify-center pt-8 mx-auto ">
 
 
-    <div v-for="video of videos" :key="video.slug">
+    <div v-for="video of videos" :key="video.slug" class=" w-80">
         <!-- <Nuxt-link :to="{ name: 'video-slug', params: { slug: video.slug } }">
           <div class="m-2 ">
               <div class="bg-gray-500 w-44 h-28">img</div>
@@ -50,7 +54,9 @@ export default {
 
   async fetch() {
     this.videos = await this.$content("video")
-    .limit(2)
+    // .limit(2)
+    // .search('Over', 'Optimize')
+    .where({ videonaam: { $in: ['Optimize for Core Web Vitals', 'video-naam-3'] } })
     .fetch();
   }
 }

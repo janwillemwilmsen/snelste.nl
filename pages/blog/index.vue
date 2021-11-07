@@ -48,7 +48,7 @@ export default {
     const blogs = await $content("blog", params.slug)
       .only(["title", "description", "slug"])
       .sortBy("volgorde", "asc")
-      .where({ title: { $ne: "Over directic" } })
+      .where({ hide: { $ne: true } })
       .fetch();
 
     return {

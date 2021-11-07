@@ -71,7 +71,9 @@
                 </div>
                 <div class="p-4 md:w-1/2 ">
                   <p class="mb-4 text-xl text-gray-400">Snelste maakt dashboards op maat. <br></p>
-                  <a class="block w-40 px-4 py-2 text-lg font-medium text-center text-white transition-colors duration-300 transform bg-indigo-600 rounded md:mt-0 hover:bg-indigo-500" href="#">Vertel me meer</a>
+                  <nuxt-link 
+                  class="block w-40 px-4 py-2 text-lg font-medium text-center text-white transition-colors duration-300 transform bg-indigo-600 rounded md:mt-0 hover:bg-indigo-500" 
+                  to="/blog/laten-maken">Vertel me meer</nuxt-link>
                 </div>
             </div>
         </div>

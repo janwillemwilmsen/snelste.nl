@@ -6,6 +6,7 @@ alt: my first blog article
 tags: none
 door: JW
 volgorde: 100
+hide: true
 ------
 
 # To do's:

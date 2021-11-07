@@ -20,7 +20,9 @@
           <h1 class="block mt-8 text-3xl text-left text-gray-100 md:-mt-8 myheading">
             {{ video.videonaam }}
           </h1> 
-  
+          <div class="text-sm ">
+             {{ video.door }}
+          </div>
 
 
     <!-- <div class="flex flex-col py-4 text-xl text-gray-200 md:flex-row"> -->
@@ -36,7 +38,7 @@
               :videoid="video.youtubeurl"
               :playlabel="video.videonaam"
                 class="w-full mx-auto mt-8"
-              params="controls=0&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"
+              params="controls=1&modestbranding=2&rel=1&enablejsapi=1"
             />
  
         <div class="p-8 prose-xl text-gray-50 ">
