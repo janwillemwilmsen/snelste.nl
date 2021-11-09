@@ -113,25 +113,7 @@ import getRoutes from "./scripts/getRoutes";
   ** Nuxt.js modules
   */
 
-  // 
-  pwa: {
-    icon: {
-      /* icon options */
-      fileName: 'icon2.png',
-    },
-    manifest: {
-      name: 'Snelste.nl - webperformance',
-      useWebmanifestExtension: true,
-      theme_color: '#d8479b',
-      lang: 'nl',
-    },
-    meta: false
-  },
-
-
-
-
-
+  
   googleFonts: {
     families: {
       'Varela+Round': true
@@ -146,6 +128,26 @@ import getRoutes from "./scripts/getRoutes";
       preconnect: true,
     },
   
+
+  // 
+  pwa: {
+    icon: {
+      /* icon options */
+      fileName: 'icon2.png',
+    },
+    manifest: {
+      name: 'Snelste.nl - webperformance',
+      useWebmanifestExtension: false,
+      theme_color: '#d8479b',
+      lang: 'nl',
+    },
+    meta: false
+  },
+
+
+
+
+
 
 
   modules: [
