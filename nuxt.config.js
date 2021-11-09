@@ -128,9 +128,15 @@ import getRoutes from "./scripts/getRoutes";
       preconnect: true,
     },
   
-
+// PWA Manifest False werkt niet. Er wordt toch een manifest met Dynamische filename gebuild.
+// in de static map staat manifest.jww.json - die is gekoppeld aan het 'Install PWA' script in ThePWA.vue(niet van toepassing in deze site, wel ikvergelijk)
+// moet dus handmatig de gebuilde kopieren en in static map zetten... pfff....
   // 
   pwa: {
+    workbox: {
+      /* workbox options */
+      workboxExtensions: ['plugins/import-custom-sw.client.js'], 
+         },
     icon: {
       /* icon options */
       fileName: 'icon2.png',
