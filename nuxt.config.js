@@ -81,6 +81,7 @@ import getRoutes from "./scripts/getRoutes";
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'manifest',   href: '/manifest.webmanifest' },
       { hid: "canonical", rel: "canonical", href: process.env.BASE_URL },
     ]
   },
