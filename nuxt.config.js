@@ -162,7 +162,26 @@ import getRoutes from "./scripts/getRoutes";
     '@nuxt/content',
     '@nuxtjs/sitemap',
     'nuxt-cookie-control',
+    'nuxt-password-protect'
   ],
+
+// Hierboven "Nuxt PW protect en hieronder Router toegevoegd voor Password prtect"
+passwordProtect: {
+  enabled: true,
+  formPath: '/password',
+  password: 'hello-world',
+  tokenSeed: 101010,
+  queryString: '_pw',
+  cookieName: '_password',
+  cookie: {
+    prefix: '',
+    expires: 5
+  },
+  ignoredPaths: ['/public-page']
+},
+  router: {
+    middleware: ['password-protect']
+  },
 
   gtm: {
     enabled: false, /* see below -- uitgezet om tag niet op dev te triggeren */
