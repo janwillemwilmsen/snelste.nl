@@ -1,13 +1,20 @@
 <template>
   <div>
     About us
+
+    <TestTheTest />
+     
+
+
   </div>
 
 </template>
 
 <script>
-export default {
 
+export default {
+  
+  
 }
 </script>
 

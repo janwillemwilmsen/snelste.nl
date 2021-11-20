@@ -167,7 +167,7 @@ import getRoutes from "./scripts/getRoutes";
 
 // Hierboven "Nuxt PW protect en hieronder Router toegevoegd voor Password prtect"
 passwordProtect: {
-  enabled: true,
+  enabled: false,
   formPath: '/password',
   password: 'hello-world',
   tokenSeed: 101010,
@@ -183,6 +183,9 @@ passwordProtect: {
     middleware: ['password-protect']
   },
 
+
+
+  
   gtm: {
     enabled: false, /* see below -- uitgezet om tag niet op dev te triggeren */
     autoInit: false,
