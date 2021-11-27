@@ -12,7 +12,7 @@
 <path d="M76,57A27,27 0 1 1 76,44h-13A15,15 0 1 0 63,57Z"/>
 </svg>
 </div>
-2022
+2021
 <div class="inline-block ">
 Snelste.nl  - 
  <Nuxt-link to="/blog/contact" >
