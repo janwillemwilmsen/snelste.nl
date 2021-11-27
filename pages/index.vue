@@ -11,7 +11,7 @@
         Monitor website performance over tijd
       </h1>
       
-      <p class="max-w-3xl pt-4 mx-auto text-2xl text-gray-400">
+      <p class="max-w-3xl pt-4 mx-auto mypara">
           Krijg geautomatiseerd inzicht in de Web Vitals en andere metrics. Benchmark je eigen website of die van je concurrenten.
             <!-- Zonder Lighthouse op te starten. -->
       </p>
@@ -36,7 +36,7 @@
            
           </div>
 
-          test : <nuxt-link to="/about?over=online marketing">Laat je ontzorgen</nuxt-link>
+          <!-- test : <nuxt-link to="/about?over=online marketing">Laat je ontzorgen</nuxt-link> -->
       </div>
 
 
@@ -48,10 +48,11 @@
     <HomepageTheImage/>
     <HomepageDashboard/>
     <HomepageTheFeatures/>
+    <HomepageTheTest />
     <HomepageVideo/>
     <HomepageCta/>
-    <HomepageNieuws/>
-    <HomepageTools/>
+    <!-- <HomepageNieuws/>
+    <HomepageTools/> -->
      <!-- <input v-model="message" type="text">
 
     <p class="text-gray-600 ">{{ message }}</p> -->

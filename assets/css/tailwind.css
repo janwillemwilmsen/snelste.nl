@@ -6,9 +6,16 @@
 
 
 .myheading {
-    font-family: Varela Round;
+    /* font-family: Varela Round; */
+    font-family: Inter;
+
     /* @apply text-lg text-center text-black font-semibold; */
-    @apply  text-center  font-bold;
+    @apply    font-extrabold leading-10;
+}
+
+.mypara {
+	font-family: Inter;
+	@apply    text-xl ;
 }
 
 .item {

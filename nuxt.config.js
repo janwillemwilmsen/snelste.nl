@@ -117,7 +117,8 @@ import getRoutes from "./scripts/getRoutes";
   
   googleFonts: {
     families: {
-      'Varela+Round': true
+      // 'Varela+Round': true
+      'Inter':  [100, 300, 600, 800, 900],
       // Roboto: true,
       // 'Josefin+Sans': true,
       // Lato: [100, 300],

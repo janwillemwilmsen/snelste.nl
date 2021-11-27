@@ -1,12 +1,12 @@
 <template>
-<div class="pb-16 bg-gray-900">
+<div class="pb-24 bg-woodsmoke-900">
 
 
 <!-- <div class="content" :style="{background: `url(${item.img})`}"> -->
 
 
-  <vue-horizontal class="">
-    <section v-for="item in items" :key="item.i" class="block blok rounded-2xl" >
+  <vue-horizontal class="p-10">
+    <section v-for="item in items" :key="item.i" class="block my-2 blok rounded-2xl" >
               <div class="bg-gray-700 ring-4 ring-blue-300 rounded-xl">  
                 <div class="flex px-4 py-3 bg-blue-200 rounded-t-xl">
                 <div class="mr-6">
@@ -29,8 +29,8 @@
 
 <div class="pt-4 mx-auto font-sans text-xl antialiased text-center ">
 
-      <p class="inline-block text-gray-200 ">{{ item.title }}</p>
-      <p class="inline-block text-gray-200 " v-html="item.content"> </p>
+      <p class="inline-block text-gray-200 mypara ">{{ item.title }}</p>
+      <p class="inline-block text-gray-200 mypara " v-html="item.content"> </p>
         
 </div>
 
@@ -38,7 +38,7 @@
     <!-- </div> -->
 <section class=" blok">
     
-    <div class="flex flex-col items-stretch content-center justify-end text-center h-96 md:h-52">
+    <div class="flex flex-col items-stretch content-center justify-end my-auto text-center h-96 md:h-52">
 
       <div class="text-2xl text-white ">Bekijk voorbeelden</div>
       <div><a href="/dashboard" class="text-gray-400 underline "> performance dashboards </a></div>
@@ -77,6 +77,9 @@ data() {
 </script>
 
 <style scoped>
+
+div.v-hl-btn-next {margin-left: 10px;}
+
 .vue-horizontal {
     width: 80%;
     margin-left: auto;

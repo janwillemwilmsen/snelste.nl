@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="flex flex-col items-center justify-center py-4 bg-blue-900 md:flex-row ">
+    <div class="flex flex-col items-center justify-center py-4 bg-blue-600 md:flex-row ">
         
 
         
@@ -8,10 +8,10 @@
 
             <div class="max-w-lg ">
                     <nuxt-link to="/" class="home">
-                    <div class="flex flex-row w-32 p-1 mx-auto border-opacity-25 bg-gradient-to-r from-blue-700 to-pink-500 rounded-3xl">
+                    <div class="flex flex-row p-1 mx-auto border-opacity-25 bg-gradient-to-r rounded-l-3xl">
                         <!-- <div><img src="~assets/icons/snelste.png" alt="Snelste" class="w-8 h-8 mx-auto "> </div> -->
-                        <div><img src="~assets/icons/snelste.svg" alt="Snelste" class="w-8 h-8 mx-auto "> </div>
-                        <div class="px-2 text-2xl font-light text-blue-900 myheading">snelste</div>
+                        <div><img src="~assets/icons/snelste.svg" alt="Snelste" class="w-6 h-6 mx-auto "> </div>
+                        <div class="w-40 px-2 text-2xl font-semibold text-left text-white mypara" style="color:white;">snelste.nl</div>
                     </div>
                     </nuxt-link> 
 

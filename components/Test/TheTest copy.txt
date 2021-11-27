@@ -22,8 +22,36 @@
         </form>
       </div>
 
-       
-       
+        
+
+
+     
+
+       <section class="PageSpeed Web.dev">
+
+          <h2 class="mt-10 text-3xl text-blue-600">
+               PageSpeed Insights
+          </h2>
+
+    <p class="p-10 mt-10 bg-gray-100 ">
+
+Pagespeed is tooling van Google. Onderzoek o.a. de Web Vitals van een website. Lijkt op de Lighthouse test die met een browser kunt uitvoeren. 
+        <!-- 1  <a :href="'https://pagespeed.web.dev/report?url=' + this.$route.query.over"> pagespeed.web.dev {{$route.query.over }} </a><br><br>
+        2  <a :href="publicPath + this.$route.query.over"> pagespeed.web.dev {{$route.query.over }} </a>
+
+        3  <a :href="'https://pagespeed.web.dev/report?url=' +  $route.query.over"> pagespeed.web.dev {{$route.query.over }} </a><br><br>
+        4  <a :href="$route.query.over"> pagespeed.web.dev {{$route.query.over }} </a>
+
+        5  <a :href="this.over"> pagespeed.web.dev {{$route.query.over }} </a><br><br> -->
+    
+
+
+
+        7  <a :href="publicPath + $route.query.over" class="block px-4 py-2 text-lg font-medium text-center text-white transition-colors duration-300 transform bg-indigo-600 rounded w-62 md:mt-0 hover:bg-indigo-500"> Test {{$route.query.over }} </a>
+
+    </p>
+
+        </section>     
 </div>
       </div>    
 </template>
@@ -33,7 +61,7 @@ export default {
     data(){
    return {
      over: this.$route.query.over,
-   
+   publicPath: "https://pagespeed.web.dev/report?url="
     }
   },  
  methods : {

@@ -1,9 +1,13 @@
 <template>
-  <section class="relative overflow-hidden bg-gray-900">
+  <section class="relative py-24 overflow-hidden bg-woodsmoke-800">
 
-        <h2 class="pt-16 text-3xl text-white myheading">
-            Metrics die je inzicht geven in: 
+
+ <div class="max-w-3xl mx-auto ">
+        <div class="text-lg text-white uppercase opacity-20 mypara"></div>
+        <h2 class="text-3xl text-center text-gray-100 opacity-80 myheading">
+          Automatisch inzicht in belangrijke metrics van urls
         </h2>
+ </div>
 
 
   <div class="absolute bottom-0 right-0 w-40 h-40 -mb-20 -mr-20 bg-blue-500 rounded-full"></div>
@@ -11,7 +15,7 @@
     <div>
       <div class="flex flex-wrap -mx-6 lg:-mx-8">
         <div class="w-full px-6 mb-20 md:w-1/2 lg:w-1/4 lg:px-8 lg:mb-0">
-          <span class="flex items-center justify-center w-20 h-20 mb-10 bg-blue-500 rounded-lg">
+          <span class="flex items-center justify-center w-20 h-20 mb-10 rounded-lg bg-woodsmoke-700">
                <svg xmlns="http://www.w3.org/2000/svg" height="20.09" width="35" xml:space="preserve" viewBox="0 0 35 20.09">
                 <g fill="#fff">
                     <path d="M17.5 0C7.85 0 0 7.85 0 17.5c0 .623.036 1.271.108 1.926l.072.664h34.64l.072-.664c.072-.651.108-1.3.108-1.926C35 7.85 27.15 0 17.5 0Zm15.971 18.6h-3.279c.037-.385.056-.75.056-1.1 0-.4-.018-.802-.055-1.194l-1.483.138c.032.347.049.702.049 1.056 0 .35-.02.709-.063 1.1H18.618l3.336-7.975-1.374-.574-3.576 8.55h-10.7a9.975 9.975 0 0 1-.063-1.101c0-.354.017-.71.05-1.056l-1.484-.138c-.036.392-.055.794-.055 1.194 0 .35.019.715.056 1.1h-3.28a15.891 15.891 0 0 1-.039-1.1C1.49 8.67 8.672 1.49 17.5 1.49S33.51 8.67 33.51 17.5c0 .36-.012.728-.039 1.1z"/>
@@ -22,8 +26,8 @@
 
           </span>
           <div class="pb-px mb-12 bg-gray-500"></div>
-          <h3 class="mt-12 mb-8 text-lg font-bold text-white font-heading">Performance</h3>
-          <p class="text-lg text-gray-200">
+          <h3 class="mt-12 mb-8 text-lg font-bold text-white mypara font-heading">Performance</h3>
+          <p class="text-lg text-gray-200 mypara">
               <!-- 11ty als CMS.<br> 
               Lighthouse voor Web Vitals metingen.<br> 
               Axe-Core voor accessibility metingen. -->
@@ -31,7 +35,7 @@
               </p>
         </div>
         <div class="w-full px-6 mb-20 md:w-1/2 lg:w-1/4 lg:px-8 lg:mb-0">
-          <span class="flex items-center justify-center w-20 h-20 mb-10 bg-yellow-500 rounded-lg">
+          <span class="flex items-center justify-center w-20 h-20 mb-10 rounded-lg bg-woodsmoke-700">
               <svg xmlns="http://www.w3.org/2000/svg" height="35" width="35" xml:space="preserve" viewBox="0 0 35 35">
                 <g fill="#fff">
                     <path d="M33.25 0H1.75C.758 0 0 .758 0 1.75v26.833c0 .35.233.584.583.584H10.5V28H1.167v-4.083H10.5V22.75H1.167v-21c0-.35.233-.583.583-.583h31.5c.35 0 .583.233.583.583v21h-8.75v1.167h8.75V28h-8.75v1.167h9.334c.35 0 .583-.234.583-.584V1.75C35 .758 34.242 0 33.25 0Z"/>
@@ -40,13 +44,13 @@
                 </svg>
           </span>
           <div class="pb-px mb-12 bg-gray-500"></div>
-          <h3 class="mt-12 mb-8 text-lg font-bold text-white font-heading">SEO</h3>
-          <p class="text-lg text-gray-200">
+          <h3 class="mt-12 mb-8 text-lg font-bold text-white mypara font-heading">SEO</h3>
+          <p class="text-lg text-gray-200 mypara">
               In welke mate een pagina voldoet aan zoekmachine marketing technische criteria.
           </p>
         </div>
         <div class="w-full px-6 mb-10 md:w-1/2 lg:w-1/4 lg:px-8 lg:mb-0">
-          <span class="flex items-center justify-center w-20 h-20 mb-10 bg-green-500 rounded-lg">
+          <span class="flex items-center justify-center w-20 h-20 mb-10 rounded-lg bg-woodsmoke-700">
              <svg xmlns="http://www.w3.org/2000/svg" height="32.563" width="35" viewBox="0 0 35 32.563">
                 <g fill="#fff">
                     <path d="M8.674 13.265h.502v4.128a2.259 2.259 0 0 0 2.257 2.256h1.995c.309 0 .559-.25.559-.558v-4.15a.559.559 0 0 0-1.117 0v3.591h-1.437a1.14 1.14 0 0 1-1.14-1.139v-4.128h5.296l11.762 3.356a.559.559 0 0 0 .711-.537V3.537A.559.559 0 0 0 27.351 3L15.589 6.356H8.674c-.957 0-1.736.779-1.736 1.736v3.437c0 .958.779 1.736 1.736 1.736zm18.271 2.08-10.72-3.06V7.336l10.72-3.059ZM8.055 8.091a.62.62 0 0 1 .619-.619h6.434v4.675H8.674a.62.62 0 0 1-.62-.619z"/>
@@ -56,15 +60,15 @@
              </svg>
           </span>
           <div class="pb-px mb-12 bg-gray-500"></div>
-          <h3 class="mt-12 mb-8 text-lg font-bold text-white font-heading">Toegangkelijkheid</h3>
-          <p class="text-lg text-gray-200">
+          <h3 class="mt-12 mb-8 text-lg font-bold text-white mypara font-heading">Toegangkelijkheid</h3>
+          <p class="text-lg text-gray-200 mypara">
                
               <!-- Hoe een screenreader de pagina interpreteert zodat blinden en slechtzienden de pagina kunnen gebruiken. -->
               Hoe goed de html van de pagina is zodat screenreaders de pagina's makkelijk kunnen interpreteren.
               </p>
         </div>
         <div class="w-full px-6 md:w-1/2 lg:w-1/4 lg:px-8">
-          <span class="flex items-center justify-center w-20 h-20 mb-10 bg-pink-500 rounded-lg">
+          <span class="flex items-center justify-center w-20 h-20 mb-10 rounded-lg bg-woodsmoke-700">
              
           <svg xmlns="http://www.w3.org/2000/svg" height="34.415" width="35" xml:space="preserve" viewBox="0 0 35 34.415">
             <path d="M34.452 0H.548A.548.548 0 0 0 0 .548v33.319c0 .303.245.548.548.548h33.904a.548.548 0 0 0 .548-.548V.548A.548.548 0 0 0 34.452 0Zm-.548 33.32H1.096V8.11h32.808v25.21zm0-26.305H1.096V1.096h32.808v5.919z" fill="#fff"/>
@@ -73,8 +77,8 @@
 
           </span>
           <div class="pb-px mb-12 bg-gray-500"></div>
-          <h3 class="mt-12 mb-8 text-lg font-bold text-white font-heading">Bestandsgrootte</h3>
-          <p class="text-lg text-gray-200">
+          <h3 class="mt-12 mb-8 text-lg font-bold text-white mypara font-heading">Bestandsgrootte</h3>
+          <p class="text-lg text-gray-200 mypara">
               Hoeveel kilobyte of megabyte de html, css, javascript en externe scripts op een pagina zijn. 
               </p>
         </div>

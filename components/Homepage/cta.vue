@@ -1,5 +1,5 @@
 <template>
-  <section class="cta">
+  <section class="cta ">
     <!-- <div class="py-16 cta ">
     
     
@@ -63,19 +63,26 @@
 
     </div> -->
 
-<div class="max-w-6xl px-6 py-16 mx-auto">
-            <div class="px-8 py-12 rounded-md md:px-20 md:flex md:justify-between">
+<div class="max-w-6xl px-6 py-24 mx-auto bg">
+            <div class="px-8 py-12 md:px-20 md:flex md:justify-between bg-woodsmoke-800 rounded-2xl">
                 <div class="p-4 md:w-1/2">
-                    <h3 class="text-2xl font-semibold text-white"> Monitor de LCP / FID en CLS van je website. Geautomatiseerd.</h3>
+                    <h3 class="text-2xl font-semibold text-left text-white myheading"> Monitor de LCP / FID en CLS van je website. Geautomatiseerd.</h3>
                     <p class="max-w-md mt-4 text-xl text-gray-400">Meerdere urls, zonder Lighthouse te starten, met historie.</p>
                 </div>
                 <div class="p-4 md:w-1/2 ">
                   <p class="mb-4 text-xl text-gray-400">Snelste maakt dashboards op maat. <br></p>
                   <nuxt-link 
-                  class="block w-40 px-4 py-2 text-lg font-medium text-center text-white transition-colors duration-300 transform bg-indigo-600 rounded md:mt-0 hover:bg-indigo-500" 
+                  class="block w-40 px-4 py-2 text-lg font-medium text-center text-white transition-colors duration-300 transform bg-blue-600 rounded md:mt-0 hover:bg-blue-500" 
                   to="/blog/laten-maken">Vertel me meer</nuxt-link>
                 </div>
             </div>
+
+
+             <div class="px-8 py-12 mt-12 md:px-20 bg-woodsmoke-800 rounded-2xl">
+
+                  <div class="text-3xl text-center text-white myheading">Volg @snelstenl op twitter for more</div>
+
+             </div>
         </div>
 
 
@@ -90,8 +97,10 @@ export default {
 
 <style>
 .cta{
-   background: url('~assets/wave-cta.svg') ;
-   background-size:cover;
+   background-image: linear-gradient(to right bottom, rgb(79, 70, 229), rgb(30, 58, 138), rgb(14, 165, 233));
+   /* background: url('~assets/wave-cta.svg') ; */
+   /* background-size:cover; */
    /* filter: grayscale(100%); */
 }
 </style>
+
