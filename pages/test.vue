@@ -59,8 +59,7 @@ export default {
    data() {
       return {
         title: "Test websites ",
-        description:
-          'Snelheid, toegankelijkheid, serverheaders, you name it'
+        description: "Snelheid, toegankelijkheid, serverheaders, you name it"
       }
     },
 
@@ -69,16 +68,16 @@ export default {
     return {
      
       meta: [
-        { hid: 'description', name: 'description', content: this.$config.speedlifypageSeoTitle },
+        { hid: 'description', name: 'description', content: this.$config.testpageSeoTitle },
         // Open Graph
       
-        { hid:      "og:title",         property: "og:title",             content: this.$config.speedlifypageSeoTitle },
-        { hid:      "og:description",   property: "og:description",       content: this.$config.speedlifypageMetaDescription },
+        { hid:      "og:title",         property: "og:title",             content: this.$config.testpageSeoTitle },
+        { hid:      "og:description",   property: "og:description",       content: this.$config.testpageMetaDescription },
         { hid:      "og:url",           property: "og:url",               content: this.$config.baseURL + '/test' },
 
         // Twitter Card
-        { hid: 'twitter:title',         name: 'twitter:title',        content: this.$config.speedlifypageSeoTitle },
-        { hid: 'twitter:description',   name: 'twitter:description',  content: this.$config.speedlifypageMetaDescription },
+        { hid: 'twitter:title',         name: 'twitter:title',        content: this.$config.testpageSeoTitle },
+        { hid: 'twitter:description',   name: 'twitter:description',  content: this.$config.testpageMetaDescription },
         { hid: 'twitter:url',           property: 'twitter:url',      content: this.$config.baseURL + '/test' },
         // { hid:  "twitter:image",        name: "twitter:image",        content: "kl",}
        ],

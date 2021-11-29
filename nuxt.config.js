@@ -35,6 +35,9 @@ import getRoutes from "./scripts/getRoutes";
 
     speedlifypageSeoTitle: 'Dashboard website performance',
     speedlifypageMetaDescription: 'Website performance dashboard. Bekijk ze nu.',
+
+    testpageSeoTitle: 'Test website',
+    testpageMetaDescription: 'Test een url in meerdere scans...',
   },
 
 
@@ -52,7 +55,7 @@ import getRoutes from "./scripts/getRoutes";
       { hid:      "og:title",         property: "og:title",             content: "My Amazing Blog on The Joy of Painting", },
       { hid:      "og:description",   property: "og:description",       content: "Articles focused on the beautiful art of landscape painting." },
       { hid:      "og:url",           property: "og:url",               content: "https://snelste.nl", },
-      { hid:      "og:image",         property: "og:image",             content: "/a-lovely-image.png" },
+      { hid:      "og:image",         property: "og:image",             content: "https://news.vuejs.org/logo.png" },
       { property: "og:site_name",                                       content: "BobRoss@Config" },
       { hid:      "og:type",          property: "og:type",              content: "website" },
       { property: "og:image:width",   content: "740" },

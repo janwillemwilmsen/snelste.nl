@@ -5,12 +5,19 @@
     :network="network.network"
     :key="network.key"
     :style="{backgroundColor: network.color}"
-    :url="socialUrl"
+ 
+    :url="sharing.url"
     :title="sharing.title"
     :description="sharing.description"
   
     class="btn btn-labeled"
-  >
+  >   
+
+    {{ sharing.url }}<br><br>
+    {{ sharing.title }}<br><br>
+
+
+  <!-- :url="socialUrl" -->
     <!-- 
     <font-awesome-icon :icon="network.icon" /> 
     <font-awesome-icon icon="faCoffee" />
@@ -56,12 +63,12 @@ export default {
     data () {
     return {
       sharing: {
-       url: 'https://toertocht.be' + this.$route.fullPath,
-        title: 'Hey maat, lees dit eens:',
-        description: this.$config.speedlifypageSeoTitle,
-        quote: '',
-        hashtags: '',
-        twitterUser: ''
+       url: 'https://snelste.nl' + this.$route.fullPath,
+        title: this.$config.testpageMetaDescription,
+        description: this.$config.testpageSeoTitle,
+        quote: 'tips n trics',
+        hashtags: 'seo, a11y',
+        twitterUser: '' 
       },
       networks: [
         // { network: 'facebook', name: 'Facebook', icon: 'user-secret', color: '#1877f2' },
@@ -70,25 +77,26 @@ export default {
         // { network: 'twitter', name: 'Twitter', icon: 'twitter', color: '#1da1f2', image: `<img src="/icons/twitter.svg" width="15px" />`},
         // { network: 'whatsapp', name: 'Whatsapp', icon: 'whatsapp', color: '#25d366', image: `<img  src="/icons/whatsapp.svg" width="15px"  />`}
      
-       { network: 'facebook', name: 'Facebook',  color: '#1877f2', image: `<img src="/icons/facebook.svg?data" width="15px" alt="Deel dit op Facebook" />`},
+        { network: 'facebook', name: 'Facebook',  color: '#1877f2', image: `<img src="/icons/facebook.svg?data" width="15px" alt="Deel dit op Facebook" />`},
         { network: 'twitter', name: 'Twitter',  color: '#1da1f2', image: `<img src="/icons/twitter.svg" width="15px"  alt="Deel dit op Twitter" />`},
         { network: 'whatsapp', name: 'Whatsapp',  color: '#25d366', image: `<img  src="/icons/whatsapp.svg" width="15px"  alt="Deel dit op Whatsapp" />`}
               
-              
-              
-              
-              
-              
-              ]
+          ]
     }
   },
 
 
 
 computed: {
-    socialUrl: function () {
-      return 'https://snelste.nl' + this.$route.fullPath
-    }
+    // socialUrl: function () {
+    //   return 'https://snelste.nl' + this.$route.fullPath
+    // }
+   
+},
+
+// created() {
+//   console.log(this.sharing.url);
+// }
 
 // metatekst: function() {
 //     return this.metaInfo
@@ -101,7 +109,6 @@ computed: {
 //   } 
 
 
-}
 }
 
 // document.getElementById("url").textContent = document.URL;
