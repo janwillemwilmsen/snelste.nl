@@ -25,3 +25,35 @@
 		flex items-center content-center justify-center
 		rounded
 }
+
+
+.nieuwstitel { 
+              font-size: 2rem;  
+              @apply  text-3xl text-blue-600;
+              }
+.nieuwssubtitel {font-size: 1.4rem;  color: #7f889b; margin-bottom: 20px;}
+
+.nieuwsartikeltitel {font-size: 1.2rem; 
+			@apply mypara;
+			}
+
+.newstable { 
+			@apply w-11/12 md:w-full px-4 rounded-sm  ;	
+			}
+.newstable tr:nth-child(even){
+  /* background-color: lightblue; */
+  @apply text-gray-300 bg-woodsmoke-700 hover:text-gray-200 ;
+
+}
+.newstable tr:nth-child(odd){
+  /* background-color:lightgray; */
+  @apply text-gray-300 bg-woodsmoke-800 hover:text-gray-200 ;
+}
+.newstable td {
+		/* padding:6px 0 6px 8px; */
+		@apply py-4 px-3 ;	
+	}
+
+.nieuwsartikeltijd {
+	@apply text-gray-600;
+}

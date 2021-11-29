@@ -1,8 +1,8 @@
 <template>
   <!-- <div class="py-24 text-center bg-woodsmoke-800"> -->
-  <div class="py-24 text-center bg-woodsmoke-900">
+  <div class="pb-24 text-center bg-woodsmoke-900">
 
-        <h2 class="text-4xl text-gray-100 opacity-80 myheading">
+        <h2 class="px-4 text-4xl text-gray-100 opacity-80 myheading md:px-0">
             Bekijk een voorbeeld
         </h2>
         <p>

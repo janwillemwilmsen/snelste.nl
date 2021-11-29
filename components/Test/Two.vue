@@ -2,12 +2,12 @@
 <section class="">
 
 
-	<div class="max-w-xl pb-16 mx-auto">
-			<h2 class="nieuwstitel"> {{ title }}</h2>
-     <p class="nieuwssubtitel"> {{ subtitle }} </p>
+	<div class="flex flex-col items-stretch h-full max-w-xl mx-auto">
+    <h2 class="nieuwstitel"> {{ title }}</h2>
+     <p class="h-full nieuwssubtitel "> {{ subtitle }} </p>
 
 
-<a target="_blank" :href="publicPath + $route.query.over" class="block px-4 py-2 text-lg font-medium text-center text-white transition-colors duration-300 transform bg-indigo-600 rounded w-62 md:mt-0 hover:bg-indigo-500"> Test {{$route.query.over }} </a>
+<a target="_blank" :href="publicPath + $route.query.over" class="block w-64 px-4 py-1 m-6 mx-auto text-base font-medium text-center text-white break-all transition-colors duration-500 transform bg-gray-400 border border-gray-600 rounded hover:bg-gray-500 w-62 md:mt-0">  &raquo; Test {{$route.query.over }} </a>
 
    <!-- <table class="newstable">
    <tbody>

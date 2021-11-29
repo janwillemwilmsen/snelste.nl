@@ -160,6 +160,7 @@ import getRoutes from "./scripts/getRoutes";
 
   modules: [
     '@nuxtjs/gtm',
+    'vue-social-sharing/nuxt',
     '@nuxt/content',
     '@nuxtjs/sitemap',
     'nuxt-cookie-control',

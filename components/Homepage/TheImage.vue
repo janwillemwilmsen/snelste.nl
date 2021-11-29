@@ -5,7 +5,7 @@
 <!-- <div class="content" :style="{background: `url(${item.img})`}"> -->
 
 
-  <vue-horizontal class="p-10">
+  <vue-horizontal class="px-10">
     <section v-for="item in items" :key="item.i" class="block my-2 blok rounded-2xl" >
               <div class="bg-gray-700 ring-4 ring-blue-300 rounded-xl">  
                 <div class="flex px-4 py-3 bg-blue-200 rounded-t-xl">
@@ -36,13 +36,13 @@
 
       </section>
     <!-- </div> -->
-<section class=" blok">
+<section class="flex flex-col items-stretch content-center justify-center my-auto text-center blok">
     
-    <div class="flex flex-col items-stretch content-center justify-end my-auto text-center h-96 md:h-52">
+    <!-- <div class=" md:justify-end h-96 md:h-52"> -->
 
-      <div class="text-2xl text-white ">Bekijk voorbeelden</div>
+      <div class="-mt-20 text-2xl text-white ">Bekijk voorbeelden</div>
       <div><a href="/dashboard" class="text-gray-400 underline "> performance dashboards </a></div>
-    </div>
+    <!-- </div> -->
     </section>
 
   </vue-horizontal>
@@ -76,9 +76,12 @@ data() {
 });
 </script>
 
-<style scoped>
+<style >
 
-div.v-hl-btn-next {margin-left: 10px;}
+div.v-hl-btn-next {margin-left: 10px;height:80%;}
+div.v-hl-btn-prev {margin-right: 10px;height:80%;}
+
+svg.v-hl-svg {margin-top:-20px;}
 
 .vue-horizontal {
     width: 80%;

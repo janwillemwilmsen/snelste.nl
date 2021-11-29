@@ -1,0 +1,135 @@
+<template>
+ <div class="sharebuttongroup">
+   <ShareNetwork
+    v-for="network in networks"
+    :network="network.network"
+    :key="network.key"
+    :style="{backgroundColor: network.color}"
+    :url="socialUrl"
+    :title="sharing.title"
+    :description="sharing.description"
+  
+    class="btn btn-labeled"
+  >
+    <!-- 
+    <font-awesome-icon :icon="network.icon" /> 
+    <font-awesome-icon icon="faCoffee" />
+btn-sm
+    <font-awesome-icon :icon="['fas', 'user-secret']" />
+    -->
+
+    <!-- <i :class="network.icon"></i> -->
+    
+      <span class="btn-label">
+        <!-- <font-awesome-icon :icon="['fab', network.icon]" /> -->
+         <!-- <img :src="network.image" style="width:50px;" alt="Dag Nacht thema switcher" class="btn-day-night"/> -->
+         <div v-html="network.image" />
+       </span>
+       <span class="btn-text"> {{ network.name }}   </span>
+  </ShareNetwork>
+</div>
+<!-- 
+<ShareNetwork
+    network="facebook"
+    :url="fbSocialUrl"
+    title="metatekst"
+    :description="metatekst"
+    :quote="metatekst"
+    hashtags="vuejs,vite"
+  >
+    Share on Facebook
+</ShareNetwork> -->
+
+</template>
+
+<script>
+
+// import TwitterLogo from "~/assets/icons/twitter.svg";
+// import FacebookLogo from "~/assets/icons/facebook.svg";
+// import WhatsappLogo from "~/assets/icons/whatsapp.svg";
+
+export default {
+    // components: 
+    //   { TwitterLogo, FacebookLogo, WhatsappLogo },
+    
+       
+    data () {
+    return {
+      sharing: {
+       url: 'https://toertocht.be' + this.$route.fullPath,
+        title: 'Hey maat, lees dit eens:',
+        description: this.$config.speedlifypageSeoTitle,
+        quote: '',
+        hashtags: '',
+        twitterUser: ''
+      },
+      networks: [
+        // { network: 'facebook', name: 'Facebook', icon: 'user-secret', color: '#1877f2' },
+        // static map wordt niet uitgerend door Nuxt....daarom niet noemen in url....
+        // { network: 'facebook', name: 'Facebook', icon: 'facebook', color: '#1877f2', image: `<img src="/icons/facebook.svg?data" width="15px" />`},
+        // { network: 'twitter', name: 'Twitter', icon: 'twitter', color: '#1da1f2', image: `<img src="/icons/twitter.svg" width="15px" />`},
+        // { network: 'whatsapp', name: 'Whatsapp', icon: 'whatsapp', color: '#25d366', image: `<img  src="/icons/whatsapp.svg" width="15px"  />`}
+     
+       { network: 'facebook', name: 'Facebook',  color: '#1877f2', image: `<img src="/icons/facebook.svg?data" width="15px" alt="Deel dit op Facebook" />`},
+        { network: 'twitter', name: 'Twitter',  color: '#1da1f2', image: `<img src="/icons/twitter.svg" width="15px"  alt="Deel dit op Twitter" />`},
+        { network: 'whatsapp', name: 'Whatsapp',  color: '#25d366', image: `<img  src="/icons/whatsapp.svg" width="15px"  alt="Deel dit op Whatsapp" />`}
+              
+              
+              
+              
+              
+              
+              ]
+    }
+  },
+
+
+
+computed: {
+    socialUrl: function () {
+      return 'https://snelste.nl' + this.$route.fullPath
+    }
+
+// metatekst: function() {
+//     return this.metaInfo
+    
+//   },
+//   Stitle: function() {
+//              return this.metaOmschrijving
+//           }
+
+//   } 
+
+
+}
+}
+
+// document.getElementById("url").textContent = document.URL;
+
+</script>
+
+<style scoped>
+
+.sharebuttongroup a {margin: 0 8px 8px 0; }
+.sharebuttongroup svg {height: 20px;}  
+
+
+.btn-label {position: relative;left: -12px;display: inline-block;padding: 6px 12px;background: rgba(0,0,0,0.15);border-radius: 3px 0 0 3px;border:0;}
+.btn-labeled {padding-top: 0;padding-bottom: 0;color: rgb(255, 255, 255); }
+.btn-text {color:#150e0e;}
+</style>
+
+
+// https://www.facebook.com/sharer/sharer.php?
+// u=https%3A%2F%2Fnews.vuejs.org%2Fissues%2F180
+// &title=Say%20hi%20to%20Vite!%20A%20brand%20new%2C%20extremely%20fast%20development%20setup%20for%20Vue.
+// &description=This%20week%2C%20I%E2%80%99d%20like%20to%20introduce%20you%20to%20%22Vite%22%2C%20which%20means%20%22Fast%22.%20It%E2%80%99s%20a%20brand%20new%20development%20setup%20created%20by%20Evan%20You.
+// &quote=The%20hot%20reload%20is%20so%20fast%20it%27s%20near%20instant.%20-%20Evan%20You
+// &hashtag=%23vuejs
+
+
+// https://www.facebook.com/sharer/sharer.php?
+// u=https%3A%2F%2Fsnelste.nl%2Ftest%3Fover%3Dwww.nu.nl
+// &title=Hey%20maat%2C%20lees%20dit%20eens%3A
+// &description=Dashboard%20website%20performance
+// &quote=&hashtag=

@@ -11,7 +11,7 @@
                     <div class="flex flex-row p-1 mx-auto border-opacity-25 bg-gradient-to-r rounded-l-3xl">
                         <!-- <div><img src="~assets/icons/snelste.png" alt="Snelste" class="w-8 h-8 mx-auto "> </div> -->
                         <div><img src="~assets/icons/snelste.svg" alt="Snelste" class="w-6 h-6 mx-auto "> </div>
-                        <div class="w-40 px-2 text-2xl font-semibold text-left text-white mypara" style="color:white;">snelste.nl</div>
+                        <div class="px-2 text-2xl font-semibold text-left text-white mypara" style="color:white;">snelste.nl</div>
                     </div>
                     </nuxt-link> 
 

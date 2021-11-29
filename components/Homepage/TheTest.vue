@@ -56,7 +56,7 @@
   <div class="mypara listitem">LCP</div>
   <div class="mypara listitem">FCP</div>
   <div class="mypara listitem">TBT</div>
-  <div class="mypara listitem">A11T</div>
+  <div class="mypara listitem">A11Y</div>
   <div class="mypara listitem">Server headers</div>
   <div class="mypara listitem">SEO</div>
   
