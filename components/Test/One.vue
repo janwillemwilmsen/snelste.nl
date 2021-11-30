@@ -3,7 +3,7 @@
 
 
 	<div class="flex flex-col items-stretch h-full max-w-xl mx-auto">
-			<h2 class="nieuwstitel"> {{ title }}</h2>
+			<h2 class="text-lg nieuwstitel "> {{ title }}</h2>
      <p class="h-full nieuwssubtitel"> {{ subtitle }} </p>
 
 

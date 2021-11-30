@@ -48,14 +48,16 @@
   </div>
 
 
- <TheShareButtons />
+<Social/>
 
   </div>
 
 </template>
 
 <script>
+import Social from '../components/Test/Social.vue'
 export default {
+  components: { Social },
    data() {
       return {
         title: "Test websites ",
@@ -74,12 +76,13 @@ export default {
         { hid:      "og:title",         property: "og:title",             content: this.$config.testpageSeoTitle },
         { hid:      "og:description",   property: "og:description",       content: this.$config.testpageMetaDescription },
         { hid:      "og:url",           property: "og:url",               content: this.$config.baseURL + '/test' },
+        { hid:      "og:image",         property: "og:image",             content: this.$config.baseURL + "/social/test-tool-share.png", },
 
         // Twitter Card
         { hid: 'twitter:title',         name: 'twitter:title',        content: this.$config.testpageSeoTitle },
         { hid: 'twitter:description',   name: 'twitter:description',  content: this.$config.testpageMetaDescription },
         { hid: 'twitter:url',           property: 'twitter:url',      content: this.$config.baseURL + '/test' },
-        // { hid:  "twitter:image",        name: "twitter:image",        content: "kl",}
+        { hid:  "twitter:image",        name: "twitter:image",        content: this.$config.baseURL + "/social/test-tool-share.png",}
        ],
       link: [
         { hid: "canonical", rel: "canonical", href: this.$config.baseURL + '/test' },

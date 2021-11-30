@@ -28,10 +28,13 @@
 
 
 .nieuwstitel { 
-              font-size: 2rem;  
-              @apply  text-3xl text-blue-600;
+            
+              @apply text-xl  lg:text-3xl text-blue-600;
               }
-.nieuwssubtitel {font-size: 1.4rem;  color: #7f889b; margin-bottom: 20px;}
+.nieuwssubtitel {  color: #7f889b; margin-bottom: 20px;
+
+			@apply text-base md:text-lg lg:text-2xl
+}
 
 .nieuwsartikeltitel {font-size: 1.2rem; 
 			@apply mypara;
