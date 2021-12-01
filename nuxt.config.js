@@ -22,7 +22,8 @@ import getRoutes from "./scripts/getRoutes";
   publicRuntimeConfig: {
     // baseURL: process.env.BASE_URL || 'https://snelsteeeee.nl'
     // baseURL: process.env.NODE_ENV === 'production' ? 'https://nuxtjs.org' : 'https://dev.nuxtjs.org'
-    baseURL: process.env.NODE_ENV === 'production' ? 'https://snelste.nl' : 'http://localhost',
+    baseURL: process.env.NODE_ENV === 'production' ? 'https://snelste.nl' : 'http://localhost:3000',
+    // baseDir: process.env.BASE_DIR || '/',
     
     homepageSeoTitle: 'Heyyyyy',
     homepageMetaDescription: 'Hallllooooo',

@@ -75,14 +75,17 @@ export default {
       
         { hid:      "og:title",         property: "og:title",             content: this.$config.testpageSeoTitle },
         { hid:      "og:description",   property: "og:description",       content: this.$config.testpageMetaDescription },
-        { hid:      "og:url",           property: "og:url",               content: this.$config.baseURL + '/test' },
-        { hid:      "og:image",         property: "og:image",             content: this.$config.baseURL + "/social/test-tool-share.png", },
+        { hid:      "og:url",           property: "og:url",               content: this.$config.baseURL + this.$nuxt.$route.fullPath },
+        // { hid:      "og:url",           property: "og:url",               content: this.$config.baseURL + this.$config.baseDir },
+        { hid:      "og:image",         property: "og:image",             content: this.$config.baseURL + '/social/test-tool-share.png'},
+        { property: "og:image:width",   content: "1200" },
+        { property: "og:image:height",  content: "627" },
 
         // Twitter Card
         { hid: 'twitter:title',         name: 'twitter:title',        content: this.$config.testpageSeoTitle },
         { hid: 'twitter:description',   name: 'twitter:description',  content: this.$config.testpageMetaDescription },
-        { hid: 'twitter:url',           property: 'twitter:url',      content: this.$config.baseURL + '/test' },
-        { hid:  "twitter:image",        name: "twitter:image",        content: this.$config.baseURL + "/social/test-tool-share.png",}
+        { hid: 'twitter:url',           property: 'twitter:url',      content: this.$config.baseURL + this.$nuxt.$route.fullPath },
+        { hid: "twitter:image",         name: "twitter:image",        content: this.$config.baseURL + '/social/test-tool-share-twitter.png'}
        ],
       link: [
         { hid: "canonical", rel: "canonical", href: this.$config.baseURL + '/test' },
