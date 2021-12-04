@@ -59,8 +59,8 @@ import getRoutes from "./scripts/getRoutes";
       { hid:      "og:image",         property: "og:image",             content: "https://news.vuejs.org/logo.png" },
       { property: "og:site_name",                                       content: "BobRoss@Config" },
       { hid:      "og:type",          property: "og:type",              content: "website" },
-      { property: "og:image:width",   content: "740" },
-      { property: "og:image:height",  content: "300" },
+      { hid:      "og:image:width",   property: "og:image:width",       content: "740" },
+      { hid:      "og:image:height",  property: "og:image:height",      content: "300" },
       
       { hid:      "twitter:title",        name: "twitter:title",        content: "",},
       { hid:      "twitter:description",  name: "twitter:description",  content: "kl",},

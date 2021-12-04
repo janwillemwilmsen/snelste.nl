@@ -25,7 +25,7 @@
 
   
 
-    <TestOne class="max-w-xl zoekitem"  title="pagespeed.web.dev" subtitle="Pagespeed is tooling van Google. Onderzoek o.a. de Web Vitals van een website. Lijkt op de Lighthouse test die met een browser kunt uitvoeren. "/>
+    <TestOne class="max-w-xl zoekitem"  title="pagespeed.web.dev" subtitle="Onderzoek o.a. de web vitals van een website.  "/>
     <TestTwo class="max-w-xl zoekitem"  title="wave.webaim.org" subtitle="Onderzoek de toegangkelijkheid van je website.  "/>
      
   </div>
@@ -38,7 +38,7 @@
 </div>
   <div class="grid grid-cols-1 gap-4 p-8 md:p-0 md:grid-cols-2">
 
-    <TestThree class="max-w-xl zoekitem"  title="securityheaders.com" subtitle="Onderzoek de serverheader. Of er security technisch zwakke punten zijn."/>
+    <TestThree class="max-w-xl zoekitem"  title="securityheaders.com" subtitle="Onderzoek de serverheaders. Of er security technisch zwakke punten zijn."/>
     <TestFour class="max-w-xl zoekitem"  title="sitecheck.sucuri.net" subtitle="Malware,spam en blacklist checker. Test je site o.a. in Google Safe browsing, McAfee, Yandex en Opera."/>
     <TestFive class="max-w-xl zoekitem"  title="internet.nl" subtitle="IPv6, DNSSEC, CSP, X-Content, X-Frame checker."/>
      
@@ -78,8 +78,8 @@ export default {
         { hid:      "og:url",           property: "og:url",               content: this.$config.baseURL + this.$nuxt.$route.fullPath },
         // { hid:      "og:url",           property: "og:url",               content: this.$config.baseURL + this.$config.baseDir },
         { hid:      "og:image",         property: "og:image",             content: this.$config.baseURL + '/social/test-tool-share.png'},
-        { property: "og:image:width",   content: "1200" },
-        { property: "og:image:height",  content: "627" },
+        { hid:      "og:image:width",   property: "og:image:width",       content: "1200" },
+        { hid:      "og:image:height",  property: "og:image:height",      content: "627" },
 
         // Twitter Card
         { hid: 'twitter:title',         name: 'twitter:title',        content: this.$config.testpageSeoTitle },
@@ -101,7 +101,7 @@ export default {
 .zoekitem { 
   background: #272a2f;
   border-radius: 1rem;
-  padding:10px 0 0 20px;
+  padding:10px 10px 0 10px;
 }
 
 </style>

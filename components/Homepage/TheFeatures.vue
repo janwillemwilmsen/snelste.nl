@@ -49,7 +49,7 @@
               In welke mate een pagina voldoet aan zoekmachine marketing technische criteria.
           </p>
         </div>
-        <div class="w-full px-6 mb-10 md:w-1/2 lg:w-1/4 lg:px-8 lg:mb-0">
+        <div class="w-full px-6 md:mb-20 md:w-1/2 lg:w-1/4 lg:px-8 lg:mb-0">
           <span class="items-center justify-center hidden w-20 h-20 rounded-lg md:mb-10 md:flex md:visible bg-woodsmoke-700">
              <svg xmlns="http://www.w3.org/2000/svg" height="32.563" width="35" viewBox="0 0 35 32.563">
                 <g fill="#fff">

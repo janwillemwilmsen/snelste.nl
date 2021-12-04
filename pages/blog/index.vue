@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gray-900">
+    <div class="bg-woodsmoke-900">
 
     <PageTitle>
            {{ title }}
@@ -14,12 +14,12 @@
 
     <div v-for="blog of blogs" :key="blog.slug">
       <NuxtLink :to="{ name: 'blog-slug', params: { slug: blog.slug } }">
-        <div class="p-4 m-4 bg-gray-800 ">
-                    <p class="text-indigo-100 text-opacity-50 bg-opacity-75 ">
+        <div class="p-4 m-4 transition duration-500 border border-gray-800 rounded bg-opacity-10 hover:bg-gray-900 ">
+                    <p class="text-gray-500 text-opacity-50 bg-opacity-75 ">
                         {{ blog.description }}
                     </p>
 
-                    <h2 class="text-2xl text-indigo-200 md:text-4xl">
+                    <h2 class="text-2xl text-indigo-200 nieuwstitel md:text-4xl">
                         {{ blog.title }}
                     </h2>
 

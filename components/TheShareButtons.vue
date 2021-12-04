@@ -10,7 +10,7 @@
     :url="sharing.url"
     :title="sharing.title"
     :description="sharing.description"
-    class="self-start w-32 m-2 border border-gray-800 rounded btn btn-labeled"
+    class="self-start m-2 border border-gray-800 rounded md:w-32 btn btn-labeled"
   >   
 
     <!-- 
@@ -25,7 +25,7 @@
       <span class="inline-block btn-label ">
          <div v-html="network.image" class="px-2 pt-2" />
        </span>
-       <span class="inline-block pt-2 text-sm align-top btn-text"> {{ network.name }}   </span>
+       <span class="hidden pt-2 text-sm align-top  md:inline-block btn-text md:visible"> {{ network.name }}   </span>
   </ShareNetwork>
 </div>
 <!-- 

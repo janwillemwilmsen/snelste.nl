@@ -1,11 +1,11 @@
 <template>
      <div class="pt-12 pb-24 bg-blue-700 bg-gradient-to-br ">        
          <!-- <p>
-         query:  {{$route.query.over}}
+         query:  {{$route.query.url}}
          </p> -->
 
         <!-- <form action="/">
-            <input type="text" :value="$route.query.over">
+            <input type="text" :value="$route.query.url">
             <input type="submit" >
         </form> -->
 <div class="max-w-md p-10 py-16 m-10 mx-auto md:max-w-5xl rounded-2xl">
@@ -31,8 +31,8 @@
         <div class=" md:w-6/12">
 
                 <form ref="form" class="w-full "  action="/test">
-                        <!-- <input name="over"  :value="$route.query.over"> -->
-                        <input name="over" v-model="over" placeholder="Vul je domeinnaam.nl of domein.com in" class="bg-gray-100  w-full xl:w-9/12 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  p-2.5">
+                        <!-- <input name="url"  :value="$route.query.url"> -->
+                        <input name="url" v-model="url" placeholder="Vul je domeinnaam.nl of domein.com in" class="bg-gray-100  w-full xl:w-9/12 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  p-2.5">
                         <!-- <a href="#" v-on:click="submit">SUBMIT</a> --><br>
 
                           <!-- <input type="button">
@@ -72,7 +72,7 @@
 export default { 
     data(){
    return {
-     over: this.$route.query.over,
+     url: this.$route.query.url,
    
     }
   },  
@@ -83,20 +83,20 @@ export default {
   },
 // methods: {
 //       appendQueryToUrl() {
-//           this.$router.replace({query: {over: this.filterData.genre}})
+//           this.$router.replace({query: {url: this.filterData.genre}})
 //       }
 // },
  
 
   created() {
-    console.log(this.$route.query.over); 
+    console.log(this.$route.query.url); 
   },
 // watch: {
-//     over(newVal) {
-//         this.$router.push({ query: { ...this.$route.query, over: newVal } });
+//     url(newVal) {
+//         this.$router.push({ query: { ...this.$route.query, url: newVal } });
 //     },
-//     '$route.query.over': function(val) {
-//         this.over = val;
+//     '$route.query.url': function(val) {
+//         this.url = val;
 //     }
 // }
 
@@ -136,5 +136,5 @@ width: 25px;
 }
 </style>
  
-    <!-- 6  <a :href="{{$route.query.over}}"> pagespeed.web.dev {{$route.query.over }} </a> -->
-        <!-- 8  <a :href="{ over }"> pagespeed.web.dev {{$route.query.over }} </a> -->
+    <!-- 6  <a :href="{{$route.query.url}}"> pagespeed.web.dev {{$route.query.url }} </a> -->
+        <!-- 8  <a :href="{ url }"> pagespeed.web.dev {{$route.query.url }} </a> -->
