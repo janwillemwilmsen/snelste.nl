@@ -12,14 +12,18 @@ volgorde: 10
 
 Snel inzicht in de belangrijkste metrics. Zien of je vooruitgang boekt. Zonder inloggen. 
 
+<style>
+    ul {margin-left:-40px;}
+    </style>
+
 ## Veronderstellend dat:
-- Je Git geinstalleerd hebt, en een Github account hebt
-- Je een Vercel account hebt
-- Je een html-editor (als VS Code) hebt, en weet hoe de 'terminal' werkt
-- Je basiskennis hebt van html en niet bang bent voor code
+- ☛ Je Git geinstalleerd hebt, en een Github account hebt
+- ☛ Je een Vercel account hebt
+- ☛ Je een html-editor (als VS Code) hebt, en weet hoe de terminal werkt
+- ☛ Je basiskennis hebt van html en niet bang bent voor code
 
 
-<details class="pl-2 bg-gray-600 rounded-sm">
+<details class="py-4 pl-8 rounded-sm bg-woodsmoke-800">
 <summary>Ik heb geen Git en ook geen Github account</summary>
 
 #### Git
@@ -40,7 +44,7 @@ Github is meer dan opslag voor code. Je kan Github ook gebruiken om bepaalde act
 
 </details>
 <br>
-<details class="pl-2 bg-gray-600 rounded-sm">
+<details class="px-8 py-4 rounded-sm bg-woodsmoke-800">
 <summary>Ik heb geen Vercel account</summary>
 
 #### Vercel
@@ -53,12 +57,18 @@ Vercel heeft een edge netwerk. In meerdere geografische regio's in de wereld wor
 </details>
 
 <br>
-<details class="pl-2 bg-gray-600 rounded-sm">
-<summary>Wat is VS Code en 'Terminal'</summary>
+<details class="py-4 pl-8 rounded-sm bg-woodsmoke-800">
+<summary>Wat is VS Code en wat is de terminal</summary>
 
 #### VS Code
-VS Code is kort voor Visual Studio Code. VS Code is een IDE (Intergrated Developer Environment) 
+VS Code is kort voor Visual Studio Code. VS Code is een IDE (Integrated Developer Environment), en bevat o.a. een editor voor de code van je project. Naast code editen kan je 
 
 <a href="" target="_blank" class="underline">Maak een Vercel account</a>
 </details>
 
+
+Er zijn 2 manieren om een dashboard te maken. Beide bevatten vrijwel evenveel tussenstappen.
+- code downloaden, configureren, koppelen aan Github, koppelen aan Vercel
+- code 
+
+## Manier 1
