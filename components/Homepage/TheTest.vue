@@ -11,7 +11,7 @@
 <div class="max-w-md p-10 py-16 m-10 mx-auto md:max-w-5xl rounded-2xl">
 
     <div class="max-w-3xl ">
-        <div class="text-lg text-white uppercase opacity-50 mypara"> Url diagnostiek</div>
+        <div class="text-lg text-white uppercase opacity-50 mypara">gratis url diagnostiek</div>
             <h2 class="pb-8 text-5xl text-woodsmoke-900 opacity-80 myheading">
                Snel inzicht in een url nodig?
             </h2>
