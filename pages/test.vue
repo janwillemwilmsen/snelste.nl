@@ -26,7 +26,7 @@
   
 
     <TestOne class="max-w-xl zoekitem"  title="pagespeed.web.dev" subtitle="Onderzoek o.a. de web vitals van een website.  "/>
-    <TestTwo class="max-w-xl zoekitem"  title="wave.webaim.org" subtitle="Onderzoek de toegangkelijkheid van je website.  "/>
+    <!-- <TestTwo class="max-w-xl zoekitem"  title="wave.webaim.org" subtitle="Onderzoek de toegangkelijkheid van je website.  "/> -->
      
   </div>
 
@@ -37,11 +37,11 @@
   Security checkers:
 </div>
   <div class="grid grid-cols-1 gap-4 p-8 md:p-0 md:grid-cols-2">
-
+<!-- 
     <TestThree class="max-w-xl zoekitem"  title="securityheaders.com" subtitle="Onderzoek de serverheaders. Of er security technisch zwakke punten zijn."/>
     <TestFour class="max-w-xl zoekitem"  title="sitecheck.sucuri.net" subtitle="Malware,spam en blacklist checker. Test je site o.a. in Google Safe browsing, McAfee, Yandex en Opera."/>
     <TestFive class="max-w-xl zoekitem"  title="internet.nl" subtitle="IPv6, DNSSEC, CSP, X-Content, X-Frame checker."/>
-     
+      -->
   </div>
 
 

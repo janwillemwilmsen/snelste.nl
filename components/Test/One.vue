@@ -41,7 +41,9 @@
 
 
   export default {
- watchQuery: ['url'],
+//  watchQuery: ['url'],
+
+
 
     name: 'url',
     data(){
@@ -58,7 +60,14 @@
 //         return this.$route.query.url
 //       }
 //     },
-
+watch: {
+    url(newVal) {
+        this.$router.push({ query: { ...this.$route.query, url: newVal } });
+    },
+    '$route.query.url': function(val) {
+        this.url = val;
+    }
+},
 
 computed:{
       url: {
@@ -78,25 +87,25 @@ computed:{
 //    console.log('asyncdata')
 // },
 
-    mounted() {
-    this.init()
-    this.url=this.$route.query.url
-  },
+  //   mounted() {
+  //   this.init()
+  //   this.url=this.$route.query.url
+  // },
 // watch: {
 //  '$route.path': {
 //    handler () {
 //      let url = this.$route.params.url
 //    },
-  methods: {
-    init () {
-      console.log(this.$route);  //should return object
-      console.log(this.$route.params); //should return object 
-      console.log(this.$route.params.url); //should return id of URL param 
-      console.log(this.$route.query);
-      // console.log(url_data2)
-      // console.log(this.$route.query);
-    },
-  },
+  // methods: {
+  //   init () {
+  //     console.log(this.$route);  //should return object
+  //     console.log(this.$route.params); //should return object 
+  //     console.log(this.$route.params.url); //should return id of URL param 
+  //     console.log(this.$route.query);
+  //     // console.log(url_data2)
+  //     // console.log(this.$route.query);
+  //   },
+  // },
 
      props: {
     title: {
