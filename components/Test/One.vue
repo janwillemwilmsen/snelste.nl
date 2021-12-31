@@ -4,7 +4,7 @@
 
 	<div class="flex flex-col items-stretch h-full max-w-xl mx-auto">
 			<h2 class="text-lg nieuwstitel ">hierr {{ title }}</h2>
-     <p class="h-full nieuwssubtitel"> {{ subtitle }} {{ this.url }}</p>
+     <p class="h-full nieuwssubtitel"> {{ subtitle }} {{ url }} {{ url }} <!--- {{ url() }}  method ---></p>
 
 <keep-alive>
 <!-- <a target="_blank" :href="publicPath + $route.query.url" class="block px-4 py-1 m-6 mx-auto text-base font-medium text-center text-white break-all transition-colors duration-500 transform bg-gray-400 border border-gray-600 rounded md:w-64 hover:bg-gray-500 md:mt-0"> &raquo; Test {{$route.query.url }}  </a> -->
@@ -12,7 +12,7 @@
 <!-- <a target="_blank" :href="publicPath + this.$route.params.url" class="block px-4 py-1 m-6 mx-auto text-base font-medium text-center text-white break-all transition-colors duration-500 transform bg-gray-400 border border-gray-600 rounded md:w-64 hover:bg-gray-500 md:mt-0"> &raquo; Test {{$route.query.url }}  </a> -->
 <!-- <a target="_blank" :href="publicPath + params.url" class="block px-4 py-1 m-6 mx-auto text-base font-medium text-center text-white break-all transition-colors duration-500 transform bg-gray-400 border border-gray-600 rounded md:w-64 hover:bg-gray-500 md:mt-0"> &raquo; Test {{$route.query.url }}  </a> -->
 <!-- <a target="_blank" :href="publicPath + this.url_data" class="block px-4 py-1 m-6 mx-auto text-base font-medium text-center text-white break-all transition-colors duration-500 transform bg-gray-400 border border-gray-600 rounded md:w-64 hover:bg-gray-500 md:mt-0"> &raquo; Test {{$route.query.url }}  </a> -->
-<a target="_blank" :href="publicPath + this.url" class="block px-4 py-1 m-6 mx-auto text-base font-medium text-center text-white break-all transition-colors duration-500 transform bg-gray-400 border border-gray-600 rounded md:w-64 hover:bg-gray-500 md:mt-0"> &raquo; Test {{$route.query.url }}  </a>
+<a target="_blank" :href="publicPath + url" class="block px-4 py-1 m-6 mx-auto text-base font-medium text-center text-white break-all transition-colors duration-500 transform bg-gray-400 border border-gray-600 rounded md:w-64 hover:bg-gray-500 md:mt-0"> &raquo; Test {{ $route.query.url }}  </a>
 </keep-alive>
 
    <!-- <table class="newstable">
@@ -53,18 +53,32 @@
     }
       },
 
-computed: {
-      url() {
-        return this.$route.query.url
-      }
+// computed: {
+//       url() {
+//         return this.$route.query.url
+//       }
+//     },
+
+
+computed:{
+      url: {
+          get() {
+          return this.$route.query.url
+           },
+          set() {
+              return this.$route.query.url
+          } 
+         }
     },
+
+  
 
 // asyncData({ route }) {
 //    console.log(route.query.url);
 //    console.log('asyncdata')
 // },
 
-    mounted () {
+    mounted() {
     this.init()
     this.url=this.$route.query.url
   },
