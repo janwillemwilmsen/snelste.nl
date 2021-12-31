@@ -66,7 +66,7 @@ computed: {
 
     mounted () {
     this.init()
-    this.url_data=this.$route.query.url
+    this.url=this.$route.query.url
   },
 // watch: {
 //  '$route.path': {
