@@ -7,7 +7,7 @@
      <p class="h-full nieuwssubtitel"> {{ subtitle }} </p>
 
 
-<a target="_blank" :href="this.$route.query.url" class="block px-4 py-1 m-6 mx-auto text-base font-medium text-center text-white break-all transition-colors duration-500 transform bg-gray-400 border border-gray-600 rounded md:w-64 hover:bg-gray-500 md:mt-0"> &raquo; Test {{$route.query.url }}  </a>
+<a target="_blank" :href="$route.query.url" class="block px-4 py-1 m-6 mx-auto text-base font-medium text-center text-white break-all transition-colors duration-500 transform bg-gray-400 border border-gray-600 rounded md:w-64 hover:bg-gray-500 md:mt-0"> &raquo; Test {{$route.query.url }}  </a>
 
    <!-- <table class="newstable">
    <tbody>
@@ -32,12 +32,28 @@
  
 <script>
   export default {
+
+    name: 'cards',
       data(){
    return {
      url: this.$route.query.url,
      publicPath: "https://pagespeed.web.dev/report?url="
     }
       },
+
+    mounted () {
+    this.init()
+  },
+
+  methods: {
+    init () {
+      console.log(this.$route);  //should return object
+      console.log(this.$route.params); //should return object 
+      console.log(this.$route.params.url); //should return id of URL param 
+      console.log(this.$route.query.url);
+    },
+  },
+
      props: {
     title: {
       type: String,
